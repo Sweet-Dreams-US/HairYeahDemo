@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hair Yeah! salon services, natural hair care products, and future classes." />
+    <meta property="og:title" content="Hair Yeah!" />
+    <meta property="og:description" content="Salon care, natural products, and future classes." />
+    <title>Hair Yeah!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="demo-bar">Concept preview <span>•</span> Sample interactions only</div>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Hair Yeah! home">Hair Yeah!</a>
+      <a class="header-link" href="#appointment-inquiry">Appointment inquiry</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Salon care • Natural products • Future classes</p>
+          <h1>HAIR.<br />CARE.<br /><em>YEAH!</em></h1>
+          <p class="hero-sub">Salon services, natural hair care products, and future classes from a licensed cosmetologist, barber, and instructor.</p>
+          <a class="primary-cta" href="#appointment-inquiry">Request an appointment <span aria-hidden="true">→</span></a>
+          <p class="credential"><span aria-hidden="true">✦</span> Licensed cosmetologist, barber and instructor</p>
+        </div>
+
+        <div class="strand-stage" aria-label="Three paths through Hair Yeah!">
+          <div class="strand-halo"></div>
+          <svg class="strand-art" viewBox="0 0 620 650" role="img" aria-labelledby="strand-title strand-desc">
+            <title id="strand-title">The Parting Line</title>
+            <desc id="strand-desc">A comb parts flowing strands into salon, products, and classes paths.</desc>
+            <defs>
+              <filter id="glow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <linearGradient id="pinkStrand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f14b87"/><stop offset="1" stop-color="#ff9ec1"/></linearGradient>
+              <linearGradient id="pearStrand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8ff6a"/><stop offset="1" stop-color="#90bf17"/></linearGradient>
+            </defs>
+            <g class="strands" fill="none" stroke-linecap="round">
+              <path d="M5 92 C170 60 292 170 602 70" stroke="url(#pinkStrand)" stroke-width="24"/>
+              <path d="M0 130 C180 95 305 215 615 116" stroke="#d9d8d3" stroke-width="9" opacity=".75"/>
+              <path d="M6 166 C175 136 298 246 608 170" stroke="url(#pearStrand)" stroke-width="18"/>
+              <path d="M18 203 C178 172 300 282 610 226" stroke="#f14b87" stroke-width="7" opacity=".65"/>
+              <path d="M18 242 C182 210 310 316 606 284" stroke="#d9d8d3" stroke-width="13" opacity=".88"/>
+              <path d="M10 278 C188 250 310 352 612 348" stroke="url(#pearStrand)" stroke-width="8" opacity=".8"/>
+              <path d="M8 316 C188 294 320 386 612 414" stroke="url(#pinkStrand)" stroke-width="19"/>
+              <path d="M10 354 C190 330 324 430 608 484" stroke="#d9d8d3" stroke-width="8" opacity=".68"/>
+              <path d="M18 393 C200 370 334 472 600 548" stroke="url(#pearStrand)" stroke-width="17"/>
+            </g>
+            <g class="comb" filter="url(#glow)">
+              <rect x="260" y="8" width="108" height="34" rx="17" fill="#d9d8d3"/>
+              <path d="M284 38 L220 360 M300 40 L252 368 M316 40 L284 374 M332 40 L316 376 M348 38 L348 372" stroke="#d9d8d3" stroke-width="10" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <a class="lane lane-salon" href="#salon"><span>01</span> Salon</a>
+          <a class="lane lane-products" href="#products"><span>02</span> Products</a>
+          <a class="lane lane-classes" href="#classes"><span>03</span> Classes</a>
+          <p class="stage-note">Choose your path</p>
+        </div>
+      </section>
+
+      <section class="path-section" aria-labelledby="paths-title">
+        <div class="section-intro">
+          <p class="eyebrow dark">One studio. Three ways to begin.</p>
+          <h2 id="paths-title">Start with what your hair needs now.</h2>
+        </div>
+        <div class="path-grid">
+          <article id="salon" class="path-card card-pink"><span class="card-index">01</span><h3>Salon</h3><p>Begin with an appointment inquiry. Share what you are looking for and Hair Yeah! can follow up with the right next step.</p><a href="#appointment-inquiry">Ask about an appointment →</a></article>
+          <article id="products" class="path-card card-pear"><span class="card-index">02</span><h3>Products</h3><p>Interested in natural hair care from Hair Yeah!? Tell us what you want to know. Product details will be added when the real collection is ready.</p><a href="#appointment-inquiry" data-interest="Natural hair care products">Share product interest →</a></article>
+          <article id="classes" class="path-card card-chrome"><span class="card-index">03</span><h3>Classes</h3><p>Classes are part of the future vision. Join the interest list to hear when real class details become available.</p><a href="#appointment-inquiry" data-interest="Future classes">Join the class interest list →</a></article>
+        </div>
+      </section>
+
+      <section class="inquiry-section" id="appointment-inquiry">
+        <div class="inquiry-copy">
+          <p class="eyebrow">Your next step</p>
+          <h2>Tell Hair Yeah! what you need.</h2>
+          <p>This form starts an inquiry. It does not confirm an appointment, reserve availability, or collect payment.</p>
+        </div>
+        <form id="inquiry-form" novalidate>
+          <label>Name<input name="name" autocomplete="name" required /></label>
+          <label>Best way to reply<input name="reply" placeholder="Phone or email" required /></label>
+          <label>I am interested in<select name="interest" id="interest" required><option value="">Choose one</option><option>Salon appointment</option><option>Natural hair care products</option><option>Future classes</option></select></label>
+          <label>What would you like Hair Yeah! to know?<textarea name="message" rows="4" required></textarea></label>
+          <button type="submit">Send sample inquiry <span aria-hidden="true">→</span></button>
+          <p class="form-note">Demo only. No message leaves this page.</p>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer><a class="wordmark" href="#top">Hair Yeah!</a><p>Salon care, natural products, and future classes.</p><a href="#appointment-inquiry">Start an inquiry ↑</a></footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
